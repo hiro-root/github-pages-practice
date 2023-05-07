@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.logo {
+  background: linear-gradient(45deg, #009efd, #59f52a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+  padding: 180px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Cherry Swash", cursive;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: #333333;
+  line-height: 1.5;
+  background-color: #add3ff;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+@media (width <= 700px) {
+  .thumbnail {
+    aspect-ratio: 1/ 1;
+  }
+}
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+  gap: 40px;
+
+}
+
+.entry {
+  font-weight: normal;
+  display: grid;
+  max-width: 800px;
+  padding: 10px;
+
+  text-decoration: none;
+  background-color: #ffffff;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .entry {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+.entry-body {
+  padding: 16px;
+}
+
+.entry-body h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.entry-body .time {
+  color: #b6bfc4;
+}
+
+.entry-body .text {
+  margin-top: 8px;
+}
+  
